@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config 'C:\Users\pedro\AppData\Local\Programs\oh-my-posh\themes\spaceship.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Users\pedro\AppData\Local\Programs\oh-my-posh\themes\zash.omp.json' | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
 Import-Module PSReadLine
