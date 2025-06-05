@@ -1,9 +1,15 @@
-oh-my-posh init pwsh --config 'C:\Users\pedro\AppData\Local\Programs\oh-my-posh\themes\zash.omp.json' | Invoke-Expression
+Write-Host "Bem-vindo Pedro!" -ForegroundColor Green
+oh-my-posh init pwsh --config "D:\MyPoshThemes\MyTheme.json" | Invoke-Expression
 
-Import-Module -Name Terminal-Icons
 Import-Module PSReadLine
+Import-Module Terminal-Icons
+Import-Module posh-git
+Import-Module PSFzf
+Import-Module -Name Terminal-Icons
 
-Function getDirList {Get-ChildItem | Format-Wide}
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+
+Function lslist {Get-ChildItem | Format-Wide}
 
 Set-Alias -Name lsw -Value getDirlist
 Set-Alias -Name kbinds -Value Get-PSReadLineKeyHandler
